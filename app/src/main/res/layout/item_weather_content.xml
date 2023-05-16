@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/date_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Sat 30 Nov" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintTop_toBottomOf="@id/date_text"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/weather_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginStart="@dimen/margin_small"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            app:layout_constraintTop_toTopOf="@id/weather_icon"
+            app:layout_constraintBottom_toBottomOf="@id/weather_icon"
+            app:layout_constraintStart_toEndOf="@id/weather_icon"
+            tools:text="Heavy Cloud" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/max_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            app:layout_constraintEnd_toStartOf="@id/min_temp"
+            app:layout_constraintBottom_toBottomOf="@id/min_temp"
+            tools:text="Max: 9℃" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/min_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Min: 9℃" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin"
+            app:layout_constraintTop_toBottomOf="@id/weather_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

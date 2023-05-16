@@ -8,7 +8,7 @@ data class WeatherDto(
     val city: City = City()
 ) {
     data class WeatherInfo(
-        val dt: Int = 0,
+        val dt: Long = 0,
         val main: Main = Main(),
         val weather: List<Weather> = listOf(),
         val clouds: Clouds = Clouds(),

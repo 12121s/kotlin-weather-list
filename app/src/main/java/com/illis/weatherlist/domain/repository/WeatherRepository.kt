@@ -5,5 +5,5 @@ import com.illis.weatherlist.ui.UiState
 import kotlinx.coroutines.flow.Flow
 
 interface WeatherRepository {
-    fun getSeoulWeathers() : Flow<UiState<WeatherDto>>
+    fun getWeathers() : Flow<UiState<List<WeatherDto?>>>
 }

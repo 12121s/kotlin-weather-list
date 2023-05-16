@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">WeatherList</string>
+
+    <string name="max_temp">Max: %.0f℃</string>
+    <string name="min_temp">Min: %.0f℃</string>
+
+    <string name="img_url">"https://openweathermap.org/img/wn/%s@2x.png"</string>
 </resources>

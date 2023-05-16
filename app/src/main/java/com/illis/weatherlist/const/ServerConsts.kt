@@ -10,7 +10,7 @@ class ServerConsts {
 
         const val CITY_NAME_SEOUL = "Seoul"
         const val CITY_NAME_LONDON = "London"
-        const val CITY_NAME_Chicago = "Chicago"
+        const val CITY_NAME_CHICAGO = "Chicago"
 
         const val SERVER_SOCKET_ERROR = 5060
         const val UNKNOWN_SERVER_ERROR = 4060
